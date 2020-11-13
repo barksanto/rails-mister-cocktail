@@ -1,0 +1,22 @@
+<h1>Here are your cocktails</h1>
+<li><%= link_to 'Add cocktail', new_cocktail_path  %></li>
+
+<div class="container m-4">
+  <H1>List of cockails</H1>
+<div class="row">
+      <% @cocktails.each do |cockail| %>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-img-top", style="">image in here</div> 
+              <div class="card-body">
+                <h3 class="card-title"><%= link_to cockail.name, cockail%></h3>
+                  <a href="#" class="card-link"><%= link_to 'More info',  cockail%></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
+</div>
